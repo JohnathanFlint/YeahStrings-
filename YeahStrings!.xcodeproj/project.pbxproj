@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1F781D511E438BBB0000EE1D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F781D501E438BBB0000EE1D /* main.cpp */; };
+		1F781D5B1E438BF30000EE1D /* StringsController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F781D591E438BF30000EE1D /* StringsController.cpp */; };
+		1F781D5D1E438C100000EE1D /* StringsRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F781D5C1E438C100000EE1D /* StringsRunner.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,9 @@
 /* Begin PBXFileReference section */
 		1F781D4D1E438BBB0000EE1D /* YeahStrings! */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "YeahStrings!"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F781D501E438BBB0000EE1D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1F781D591E438BF30000EE1D /* StringsController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StringsController.cpp; path = "YeahStrings!/Controller/StringsController.cpp"; sourceTree = "<group>"; };
+		1F781D5A1E438BF30000EE1D /* StringsController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = StringsController.hpp; path = "YeahStrings!/Controller/StringsController.hpp"; sourceTree = "<group>"; };
+		1F781D5C1E438C100000EE1D /* StringsRunner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StringsRunner.cpp; path = "YeahStrings!/Controller/StringsRunner.cpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +46,7 @@
 		1F781D441E438BBB0000EE1D = {
 			isa = PBXGroup;
 			children = (
+				1F781D5E1E438C180000EE1D /* Controller */,
 				1F781D4F1E438BBB0000EE1D /* YeahStrings! */,
 				1F781D4E1E438BBB0000EE1D /* Products */,
 			);
@@ -60,6 +66,16 @@
 				1F781D501E438BBB0000EE1D /* main.cpp */,
 			);
 			path = "YeahStrings!";
+			sourceTree = "<group>";
+		};
+		1F781D5E1E438C180000EE1D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1F781D5C1E438C100000EE1D /* StringsRunner.cpp */,
+				1F781D591E438BF30000EE1D /* StringsController.cpp */,
+				1F781D5A1E438BF30000EE1D /* StringsController.hpp */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +136,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F781D511E438BBB0000EE1D /* main.cpp in Sources */,
+				1F781D5D1E438C100000EE1D /* StringsRunner.cpp in Sources */,
+				1F781D5B1E438BF30000EE1D /* StringsController.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
