@@ -12,6 +12,13 @@
 
 using namespace std;
 
+StringsController :: StringsController()
+{
+    phrase = "antanenyes parmanen";
+    correctT = "I presented him with a book";
+    
+}
+
 void StringsController :: start()
 {
     StringsController :: translate();
@@ -22,37 +29,46 @@ string StringsController :: translate()
     string input;
     
     cout << "Translate this phrase" << endl;
-    cout << "Narn e·Dant Gondolin ar Orthad en·Êl" << endl;
+    cout << "antanenyes parmanen" << endl;
+    cout << "The correct translation has " << correctT.length() << " characters" << endl;
+
     
     getline(cin, input);
     
-    cout << input.length() << endl;
+
     
-   /* if(!input.empty())
+    if(!input.empty())
     {
         cout << "You at least did something" << endl;
         
-        if(input.length() == 44)
+        if(input.length() == correctT.length())
         {
             cout << "Your have the right number of characters" << endl;
             
-            if(
+            if(input[0] == correctT[0])
+            {
+                cout << "The first letter of the correct translation matches the first letter of your translation." << endl;
+            }
+            else
+            {
+                cout << "The first letter of the correct translation does not match the first letter of your translation." << endl;
+            }
         
         }
-        else if(input.length() < 44)
+        else if(input.length() < correctT.length())
         {
-            cout << "Too few letters" << endl;
+            cout << "Too few letters. Come on! I even gave you the length." << endl;
         }
-        else if(input.length() > 44)
+        else if(input.length() > correctT.length())
         {
-            cout << "Too many letters" << endl;
+            cout << "Too many letters. Come on! I even gave you the length." << endl;
         }
         
     }
     else
     {
         cout << "You aren't even trying" << endl;
-    }*/
+    }
     
     return 0;
 }

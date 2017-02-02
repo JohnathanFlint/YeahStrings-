@@ -9,15 +9,20 @@
 #ifndef StringsController_hpp
 #define StringsController_hpp
 
-#include <stdio.h>
 #include <string>
 
 using namespace std;
 
 class StringsController
 {
-public: void start();
-private: string translate();
+public:
+    StringsController();
+    void start();
+    
+private:
+    string phrase;
+    string correctT;
+    string translate();
 };
 
 #endif /* StringsController_hpp */
